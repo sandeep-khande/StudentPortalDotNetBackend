@@ -187,7 +187,7 @@ namespace StudentManagement.API.Controllers
 
             var mailMessage = new MailMessage
             {
-                From = new MailAddress(senderEmail, "Your App Name"),
+                From = new MailAddress(senderEmail, "Student Portal Management System"),
                 Subject = "Password Reset Request",
                 Body = $"<p>Click <a href=\"{resetLink}\">here</a> to reset your password.</p>",
                 IsBodyHtml = true
